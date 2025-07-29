@@ -1,0 +1,111 @@
+/* Background and body reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  }
+
+  .reg-pg
+  {
+    background: linear-gradient(to right, #4299e1, #805ad5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .register-container .show-pass
+  {
+    width: max-content;
+    display: flex;
+    justify-content: left;
+  }
+  /* Register card styling */
+  .register-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Header */
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Input fields */
+  .register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .register-container input:focus {
+    border-color: #805ad5;
+  }
+  
+  /* Button */
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4299e1, #805ad5);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background: linear-gradient(to right, #3182ce, #6b46c1);
+  }
+  
+  /* Bottom links */
+  .register-container .links {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .register-container .links a {
+    color: #2b6cb0;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .log-but
+  {
+    cursor: pointer;
+  }
+
+  .valErr
+  {
+    color: red;
+    font-size: 0.85rem;
+    margin: 4px 0 10px 2px;
+  }
+  .show-pass label {
+    display: flex;
+    gap: 7px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+
+  .show-pass input[type='checkbox'] {
+    cursor: pointer;
+  }

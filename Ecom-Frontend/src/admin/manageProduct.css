@@ -1,0 +1,289 @@
+
+/* ========== Base Reset ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f7f9;
+  color: #333;
+}
+h2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ========== Container ========== */
+.manage-container {
+  padding: 30px;
+ background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  margin: 80px auto;
+  width: 95%;
+  max-width: 1200px;
+  margin-left: 300px;
+}
+
+/* ========== Heading ========== */
+.manage-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ========== Table ========== */
+.manage-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.manage-table th {
+  background-color: #ff7f11;
+  color: #fff;
+  padding: 14px 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.manage-table td {
+  padding: 14px 12px;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #2e2e3e;
+}
+
+.btn
+{
+  display: flex;
+  gap: 10px;
+  justify-content: center ;
+  align-items: center;
+  
+}
+
+
+.edit-btn {
+  margin: 110px auto;
+  background-color: #ff7700;
+  width: 70px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  box-shadow: #e6f7f9;
+  transition: all 0.3s ease; /* ✅ Smooth transition */
+}
+.edit-btn:hover {
+  background-color: #fc8d2c;
+  transform: scale(1.05); /* 🔥 Slight zoom on hover */
+}
+
+.delete-btn {
+  
+  background-color: red;
+  width: 70px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* ✅ Smooth transition */
+}
+.delete-btn:hover {
+  background-color: #ec2929;
+  transform: scale(1.05); /* 🔥 Slight zoom on hover */
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  box-shadow: 0 4px 12px rgb(34, 8, 8);
+}
+
+/* ========== Image Cell ========== */
+.image-slider-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.table-product-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #ff7f11;
+}
+
+/* ========== Action Buttons ========== */
+
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .manage-table th,
+  .manage-table td {
+    font-size: 13px;
+    padding: 10px 6px;
+  }
+
+  .table-product-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .manage-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .manage-actions button {
+    width: 100%;
+  }
+}
+
+
+/* ===== Modal Overlay ===== */
+.modal-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 16px; /* Space between items */
+}
+
+/* Make certain fields span full width */
+.modal-content .full-width {
+  grid-column: 1 / -1; /* Span both columns */
+}
+
+/* Optional: Style form labels inside modal */
+.modal-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+   
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-in-out;
+ 
+}
+
+/* ===== Modal Header ===== */
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== Form Fields ===== */
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus,
+.modal-content select:focus {
+  outline: none;
+  border-color: #ff7f11;
+}
+
+/* ===== Modal Buttons ===== */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-actions button[type="submit"] {
+  background-color: #ff7700;
+  color: white;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background-color: #fc8d2c;
+  transform: scale(1.05);
+}
+
+.modal-actions button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.modal-actions button[type="button"]:hover {
+  background-color: #aaa;
+  transform: scale(1.05);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .modal-content {
+    padding: 20px;
+  }
+}

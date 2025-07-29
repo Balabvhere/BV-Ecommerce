@@ -1,0 +1,12 @@
+body{
+    background-color: azure;
+}
+
+.home-container {
+    background-color: white;
+    min-height: 100vh;
+    padding-top: 70px; /* if your navbar is fixed */
+  }
+
+  
+  

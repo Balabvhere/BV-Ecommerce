@@ -1,0 +1,50 @@
+.order-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.order-table {
+  width: 100%;
+  color:white;
+  border-collapse: collapse;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.order-table th,
+.order-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: rgb(252, 127, 2);
+  color: white;
+  font-weight: bold;
+}
+
+.order-table tbody tr:hover {
+  background-color: #1e1e2f;
+}
+
+.order-table ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.btn-succes-order
+{
+  cursor: pointer;
+  background-color: #1e1e2f;
+  color: white;
+}
+.btn-succes-order:disabled
+{
+  cursor: not-allowed;
+  opacity: 0.5;
+}

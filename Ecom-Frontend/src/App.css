@@ -1,0 +1,51 @@
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+  }
+  /* Full-page layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top navbar fixed */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; /* adjust if needed */
+  z-index: 1000;
+}
+
+/* Main content below navbar */
+.main-content {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Same as navbar height */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background-color: #1e1e2f;
+  color: white;
+  height: calc(100vh - 60px); /* fill below navbar */
+  position: sticky;
+  top: 60px;
+  padding: 20px 10px;
+}
+
+/* Page content area */
+.page-content {
+  flex: 1;
+  background-color: #eaf9f9;
+  padding: 20px;
+  overflow-y: auto;
+}

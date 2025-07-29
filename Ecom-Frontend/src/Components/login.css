@@ -1,0 +1,90 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .log-bg
+  {
+    background: linear-gradient(to right, #4299e1, #805ad5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  /* Card container */
+  .login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-container .show-pass
+  {
+    width: max-content;
+    display: flex;
+    justify-content: left;
+  }
+  /* Header */
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Inputs */
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login-container input:focus {
+    border-color: #805ad5;
+  }
+  
+  /* Button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4299e1, #805ad5);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #3182ce, #6b46c1);
+  }
+  
+  /* Links */
+  .login-container .links {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login-container .links a {
+    color: #2b6cb0;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .reg-but
+  {
+    cursor: pointer;
+  }
