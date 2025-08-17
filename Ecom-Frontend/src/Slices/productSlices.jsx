@@ -154,11 +154,9 @@ const productSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(updateProduct.fulfilled, (state, action) => {
+        const updProduct=action.payload;
+        state.products= state.products.map((p)=>p._id === updProduct._id ? updProduct :p);
         state.isLoading = false;
-        const index = state.products.findIndex(p => p._id === action.payload._id);
-        if (index !== -1) {
-          state.products[index] = action.payload;
-        }
         state.successMessage = "Product updated successfully";
       })
       .addCase(updateProduct.rejected, (state, action) => {
