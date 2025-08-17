@@ -43,7 +43,7 @@ const AdminDashboard = () => {
           <h2 className="dashboard-heading">📈 Admin Dashboard</h2>
 
           <div className="dashboard-boxes">
-            <div className="dash-box box1">
+            <div className="dash-box box1" onClick={() => navigate('/manageProduct')}>
               <h3>📦 Products</h3>
               <p>{products.length}</p>
             </div>
@@ -51,7 +51,7 @@ const AdminDashboard = () => {
               <h3>🛒 Orders</h3>
               <p>{orders.filter(order => order.status === "successful").length}</p>
             </div>
-            <div className="dash-box box3">
+            <div className="dash-box box3"  onClick={() => navigate('/manageUser')}>
               <h3>👥 Users</h3>
               <p>{user.length}</p>
             </div>
